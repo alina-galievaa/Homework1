@@ -1,6 +1,8 @@
 // Задание 1
 let a = 10;
 alert(a);
+a=20;
+alert(a);
 // Задание 2
 const Iphone = "2007";
 alert(Iphone);
@@ -28,12 +30,12 @@ let remains = k % b;
 alert(remains);
 // Задание 7
 let n = 1;
-n = n + 5;
-n = n - 3;
-n = n * 7;
-n = n / 3;
-n = n++;
-n = n--;
+n += 5;
+n -= 3;
+n *= 7;
+n /= 3;
+n++;
+n--;
 alert(n);
 // Задание 8
 let age;
@@ -59,4 +61,4 @@ alert(user[info]);
 
 // Задание 10
 let userName = prompt('Как вас зовут?');
-alert('Привет,' + userName + '!');
+alert(`Привет,` + userName + `!`);
