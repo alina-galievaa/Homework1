@@ -23,7 +23,7 @@
 .h_2{
     font-family: Montserrat;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 32px;
     letter-spacing: 0px;
     text-align: left;
@@ -53,7 +53,6 @@
     text-align: left;
     color: #FFFFFF;
     width: 789px;
-    height: 125px;
     padding-bottom: 32px;
 }
 
@@ -107,5 +106,8 @@
 
 .jpg{
     height: 300px;
+    width: 379px;
     border-radius: 16px;
 }
+
+@import 'mobile';
