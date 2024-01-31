@@ -108,6 +108,14 @@
   border-radius: 16px;
 }
 
+.menu_content:hover {
+  transform: scale(1.05);
+}
+
+.go:hover {
+  transform: scale(1.05);
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
