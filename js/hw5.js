@@ -134,7 +134,7 @@ function month() {
     } else if (monthNumber === '6'|| monthNumber === '7' || monthNumber === '8') {
         alert('лето');
     } else if (monthNumber === '9'|| monthNumber === '10' || monthNumber === '11') {
-        alert('осень ' );
+        alert('осень' );
     } else {
         alert('Такого месяца не существует!');
     };
