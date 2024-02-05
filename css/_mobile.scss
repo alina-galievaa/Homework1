@@ -64,5 +64,41 @@
         border-radius: 16px;
     }
 
-    
+    .seasons{
+        height: 654px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+    }
+
+    .head{
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 51px;
+    }
+
+    .seasons_heading{
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+    }
+
+    .h_3{
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        text-align: center;
+
+    }
+
+    .game_jpg{
+        width: 344px;
+        height: 236px;
+        padding-bottom: 85px;
+    }
 }
