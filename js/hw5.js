@@ -12,19 +12,17 @@ let min = (a, b) => {
 console.log(min(10, 7))
 
 //задание 2
-let number = prompt('Введите число');
-
-if (number % 2 == 0) {
-    function printNumber() {
-        console.log("Число четное");
-    }
-} else {
-    function printNumber() {
-        console.log("Число нечетное");
+function num() {
+    let number = prompt('Введите число');
+    if (number % 2 == 0) {
+        return('Число четное');
+    } else {
+        return('Число нечетное');
     }
 }
 
-printNumber();
+let numres = num();
+alert(numres);
 
 //задание 3
 //задание 3.1
@@ -46,23 +44,21 @@ alert(`Квадрат числа  ${squareResult}`);
   
 
 //задание 4
-let age = prompt("Сколько Вам лет?");
+function hi() {
+    let age = prompt("Сколько Вам лет?");
 
-if (age < 0) {
-    function printMessage() {
-        console.log("Вы ввели неправильное значение");
-    }
-} else if (age > 0 && age < 12){
-    function printMessage() {
-        console.log("Привет, друг!");
-    }
-} else if (age >=13){
-    function printMessage() {
-        console.log("Добро пожаловать!");
+    if (age < 0) {
+        return('Вы ввели неправильное значение');
+    } else if (age > 0 && age < 12) {
+        return('Привет, друг!');
+    } else if (age >=13) {
+        return('Добро пожаловать!');
     }
 }
 
-printMessage();
+let years = hi();
+alert (years);
+
 //задание 5
 let input1 = Number(prompt('Введите первое число:'));
 let input2 = Number(prompt('Введите второе число:'));
