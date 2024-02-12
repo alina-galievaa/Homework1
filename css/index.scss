@@ -111,7 +111,9 @@
 }
 
 .menu_content:hover{
-    transform: scale(1.05);
+    border: 3px solid #44D2FF;
+    border-radius: 16px;
+    transition: all 0,8s;
 }
 
 .go:hover {
