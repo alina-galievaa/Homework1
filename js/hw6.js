@@ -2,8 +2,11 @@
 const number = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < number.length; i++) {
-	if (number[i] == 10) break;
 	console.log(number[i]);
+	if (number[i] == 10) {
+		break;
+	}
+	
 }
 
 //задание 2
@@ -13,16 +16,17 @@ console.log(index);
 
 //задание 3
 const b = [1, 3, 5, 10, 20];
-j = b.join(' ');
+let j = b.join(' ');
 console.log(j);
 
 //задание 4
 const m=[];
-for (let Mas = 0; Mas< 3; Mas++ ) {
-    m[Mas]=[];
-    for (aMas =0; aMas<3; aMas++){
-    	m[Mas][aMas]=1
+for (let i = 0; i< 3; i++ ) {
+    let mas = [];
+    for (let k =0; k<3; k++){
+    	mas.push(1);
 	}
+	m.push(mas);
 }
 console.log(m);
 
@@ -42,9 +46,9 @@ let numbers = [9, 8, 7, 6, 5];
 let userGuess = prompt('Попробуйте угадать число из массива');
 
 if (userGuess === null) {
-alert('Отменено'); // выводим сообщение, если пользователь отменил ввод
+alert('Отменено'); 
 } else if (userGuess.trim() === "" || isNaN(userGuess)) {
- alert('Введите число, а не текст'); // проверяем, является ли введенное значение числом
+ alert('Введите число, а не текст');
 } else if (numbers.includes(parseInt(userGuess))) {
 alert('Угадал');
 } else {
@@ -61,8 +65,9 @@ const mas2 = [
 	[1, 2, 3,],
 	[4, 5, 6],
 ];
-const masIn = mas2.reduce((aaa, bbb) => [...aaa, ...bbb], []);
-console.log(masIn);
+
+let array = mas2[0].concat(mas2[1]); 
+console.log(array);
 
 //задание 10
 const over = [2, 5, 7, 8, 3, 1, 0, 9, 4, 6];
@@ -75,9 +80,13 @@ for (let i = 0; i < over.length - 1; i++) {
 }
 
 //задание 11
-const numb=[10, 14, 18, 24, 32];
-let = square =numb.map(cc=>(cc ** 2))
-console.log(square);
+function square(arr) {
+    return arr.map(number => number **2);
+}
+
+let numb=[10, 14, 18, 24, 32];
+let squaredArray = square(numb);
+console.log(squaredArray); 
 
 //задание 12
 function wordsAny(arm) {
@@ -93,5 +102,5 @@ function filterPositive(array) {
 	return array.filter(number => number < 0);
 }
   
-console.log (filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10]
-console.log (filterPositive([-25, 25, 0, -1000, -2])); // => [-25, -1000, -2]
+console.log (filterPositive([-1, 0, 5, -10, 56]));
+console.log (filterPositive([-25, 25, 0, -1000, -2]));
