@@ -125,6 +125,7 @@
     background: #000915;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .head{
@@ -155,5 +156,17 @@
     height: 333px;
 }
 
+.words{
+    height: 800px;
+    background: #000915;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.game2_jpg{
+    width: 481px;
+    height: 322px;
+}
 
 @import 'mobile';

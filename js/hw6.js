@@ -84,7 +84,7 @@ function square(arr) {
     return arr.map(number => number **2);
 }
 
-let numb=[10, 14, 18, 24, 32];
+let numb = [10, 14, 18, 24, 32];
 let squaredArray = square(numb);
 console.log(squaredArray); 
 
