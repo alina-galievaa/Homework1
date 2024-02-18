@@ -11,27 +11,49 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class="top"> 
-        <img src="image/top.jpg" alt="top_image" class="img">
+    <div class="top center"> 
         <div class="heading">
             <h1 class="top_heading">Добро пожаловать на мой сайт !</h1>
             <h2 class="h_2">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span class="h_2-bold">поехали</span> и <span class="h_2-bold">приступай</span> </h2>
             <button class="go">Поехали!</button>
         </div> 
     </div>
-    <div class="menu">
+    <div class="menu center">
         <div class="menu_content">
-            <a href="#"><img src="image/menu_1.jpg" alt="1" class="jpg"></a>
-            <h2 class="menu_heading">Игра 1</h2>
+            <a href="#">
+                <img src="image/menu_1.jpg" alt="1" class="jpg">
+                <h2 class="menu_heading">Игра 1</h2>
+            </a>
         </div>
         <div class="menu_content">
-            <a href="#"><img src="image/menu_2.jpg" alt="2" class="jpg"></a>
-            <h2 class="menu_heading">Игра 2</h2>
+            <a href="#">
+                <img src="image/menu_2.jpg" alt="2" class="jpg">
+                <h2 class="menu_heading">Игра 2</h2>
+            </a>
         </div> 
         <div class="menu_content">
-            <a href="#"><img src="image/menu_3.jpg" alt="3" class="jpg"></a>
-            <h2 class="menu_heading">Игра 3</h2>
+            <a href="#">
+                <img src="image/menu_3.jpg" alt="3" class="jpg">
+                <h2 class="menu_heading">Игра 3</h2>
+            </a>
         </div>
     </div>
+    <div class="seasons center">
+        <div class="head">
+            <h2 class="seasons_heading">Времена года!</h2>
+            <h3 class="h_3">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</h3>
+            <button class="go">Играть!</button>
+        </div>
+        <img src="image/game.jpg" alt="игра" class="game_jpg">
+    </div>
+    <div class="words center">
+        <img src="image/game2.jpg" alt="игра" class="game2_jpg">
+        <div class="head">
+            <h2 class="seasons_heading">Запомни слова</h2>
+            <h3 class="h_3">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</h3>
+            <button onclick="game();" class="go">Играть!</button>
+        </div>
+    </div>
+    <script src="./js/hw8.js"></script>
 </body>
 </html>
