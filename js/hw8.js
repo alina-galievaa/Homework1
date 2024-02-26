@@ -81,10 +81,10 @@ function forSecond(cb) {
 }
 
 function sayHi(name) {
-    return function () {
-        console.log(`Привет, ${name}!`);
-    };
+    console.log(`Привет, ${name}!`);
 }
 
-forSecond(sayHi('Глеб'))
+forSecond(() => {
+    sayHi('Глеб');
+})
 
