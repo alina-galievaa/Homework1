@@ -104,3 +104,21 @@ function filterPositive(array) {
   
 console.log (filterPositive([-1, 0, 5, -10, 56]));
 console.log (filterPositive([-25, 25, 0, -1000, -2]));
+
+
+
+
+
+
+
+
+let mango = (quantity, cost) => {
+    if (quantity <= 2 && quantity > 0) {
+        return quantity * cost;
+    } else if (quantity > 2) {
+        let stock = Math.floor(quantity / 3);
+        return (quantity-stock) * cost;
+    }
+} 
+
+console.log(mango(9, 5));
